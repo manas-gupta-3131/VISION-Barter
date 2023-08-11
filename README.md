@@ -1,1 +1,2 @@
 # VISION-NERD
+Vison Nerd is  is an online classifieds platform that allows people to buy and sell a wide variety of products and services locally within their organisation, fidndin and listing out items in the campus marketplace and exchange with verified students.The seller can upload photos of the items they are willing to sell, there will be systems to report suspicious activity. Items are suggested to the buyers and items that are sold are categorised with filters in the search bar.Items will be suggested to buyers branch wise and year wise .
