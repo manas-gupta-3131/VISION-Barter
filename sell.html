@@ -1,0 +1,44 @@
+<!-- sell.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sell Your Product</title>
+    <link rel="stylesheet" href="./app.css"/>
+    <link rel="stylesheet" href="./sell.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Barter</div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./sell.html">Sell</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <h2>Sell Your Product</h2>
+    </header>
+    
+    <main>
+    <h1>Sell Your Product</h1>
+    <form action="./add_product.php" method="POST">
+        Product Name: <input type="text" name="product_name"><br>
+        Product Description: <input type="text" name="product_price"><br>
+        Price: <input type="text" name="product_price"><br>
+        <input type="submit" value="Add Product">
+    </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Barter. All rights reserved.</p>
+    </footer>
+</body>
+</html>

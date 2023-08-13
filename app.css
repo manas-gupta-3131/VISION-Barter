@@ -1,0 +1,196 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a093d; /* Dark purple background */
+    color: #fff; /* Text color */
+}
+
+header {
+    background-color: #230c5a; /* Darker purple header background */
+    color: #fff;
+    padding: 2rem;
+    text-emph;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0;
+    width: 100%;
+    background-attachment: fixed;
+    background-color: #ff4d00;
+    left:0;
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #3f187c; /* Darker purple hero background */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #230c5a; /* Darker purple button background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #3f187c; /* Darker purple hover button background */
+}
+
+.featured-listings {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.listing-container {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    height: fit-content;
+    
+}
+
+.listing-card {
+    background-color: #4a2e5b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display:inline-flex;
+    align-items: center; /* Center align items vertically */
+    margin-right: 1rem; /* Add spacing between cards */
+    min-width: 300px; /* Set a minimum width for cards */
+    height: 300px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.listing-card img {
+    max-width: 70%; /* Set image width to 70% of the card */
+    object-fit:scale-down;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10%;
+
+
+}
+
+.listing-details {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Allow the details section to grow and fill remaining space */
+}
+.listing-details{
+    display: flex;
+}
+.listing-details h3 {
+    font-size: 1.2rem;
+    font-weight: bold; /* Add bold font weight to the title */
+    margin-bottom: 0.5rem;
+    
+}
+.listing-details .price{
+    color: rgb(0, 0, 0);
+}
+.price {
+    font-weight: bold;
+    color: #333;
+    text-align: right; /* Align the price to the right */
+}
+
+#show-more-btn {
+    display: none;
+    margin: 2rem auto;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #230c5a; /* Darker purple footer background */
+    color: #fff;
+}
+/* ... (previous styles) ... */
+
+.category-catalog {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.category-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    position: relative; /* Position the background text */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+}
+
+.category-card img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.category-card h3 {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(246, 246, 246, 0.605);
+    border-radius: 2px;
+}
+/* ... (other styles) ... */

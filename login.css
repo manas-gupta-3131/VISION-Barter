@@ -1,0 +1,35 @@
+/* ... (previous styles) ... */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#google-login-btn {
+    background-color: #4a2e5b;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#google-login-btn:hover {
+    background-color: #59416c;
+}

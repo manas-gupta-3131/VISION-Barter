@@ -1,0 +1,166 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Barter - Buy and Sell Goods</title>
+    <link rel="stylesheet" href="./app.css"
+</head>
+<body>
+    <!--HEADER SECTION-->
+    <header>
+        <nav>
+            <div class="logo">Barter</div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./sell.html">Sell</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--HEADER SECTION ENDS-->
+
+    <!--HERO//INTRO STUFF-->
+    <section class="hero">
+        <h1>Welcome to Barter</h1>
+        <p>Buy and sell goods from your fellow college students.</p>
+        <a href="./login.html" class="btn">Get Started</a>
+    </section>
+    
+<!--Static data of products in cards-->
+<section class="featured-listings">
+    <h2>Featured Listings</h2>
+    <div class="listing-container">
+        <div class="listing-card">
+            <div class="image-box">
+                <img src="./resources/Calculator.jpg" alt="Item 5">
+            </div>
+            <div class="listing-details">
+                <h3>ESSX990 Calculator</h3>
+                <span class="price">Rs.50</span>
+            </div>
+        </div>
+        <div class="listing-card">
+            <div class="image-box">
+                <img src="./resources/Mini Drafter.jpg" alt="Item 2">
+            </div>
+            <div class="listing-details">
+                
+                <h3>Mini Drafter</h3>
+                <span class="price">Rs430</span>
+            </div>
+        </div>
+        <div class="listing-card">
+            <div class="image-box">
+                <img src="./resources/cycle.jpg" alt="Item 2">
+            </div>
+            <div class="listing-details">
+                
+                <h3>Hero Sprint 12 speed</h3>
+                <span class="price">Rs3,500</span>
+            </div>
+        </div>
+        <div class="listing-card">
+            <div class="image-box">
+                <img src="./resources/lamp2.jpg" alt="Item 2" height="70%">
+            </div>
+            <div class="listing-details">
+                
+                <h3>Golden Table lamp</h3>
+                <span class="price">Rs430</span>
+            </div>
+        </div>
+        <div class="listing-card">
+            <div class="image-box">
+                <img src="./resources/Mini Drafter.jpg" alt="Item 2">
+            </div>
+            <div class="listing-details">
+                
+                <h3>Mini Drafter</h3>
+                <span class="price">Rs430</span>
+            </div>
+        </div>
+        <div class="listing-card">
+            <div class="image-box">
+                <img src="./resources/Mini Drafter.jpg" alt="Item 2">
+            </div>
+            <div class="listing-details">
+                
+                <h3>Mini Drafter</h3>
+                <span class="price">Rs430</span>
+            </div>
+        </div>
+        <div class="listing-card">
+            <div class="image-box">
+                <img src="./resources/Mini Drafter.jpg" alt="Item 2">
+            </div>
+            <div class="listing-details">
+                
+                <h3>Mini Drafter</h3>
+                <span class="price">Rs430</span>
+            </div>
+        </div>
+    </div>
+    <button id="show-more-btn" class="btn" href="#">Show More</button>
+</section>
+
+<!-- ... (remaining code) ... -->
+
+<section class="category-catalog">
+    <h2>Product Categories</h2>
+    <div class="category-card">
+        <img src="./resources/ElectronicsBanner.jpg" alt="Category 1">
+        <h3>Electronics</h3>
+    </div>
+    <div class="category-card">
+        <img src="./resources/shirt-colour-clothing-fashion-thumbnail.jpg" alt="Category 2">
+        <h3>Clothing</h3>
+    </div>
+    <div class="category-card">
+        <img src="category3.jpg" alt="Category 3">
+        <h3>Furniture</h3>
+    </div>
+    <!-- Add more category cards here -->
+</section>
+
+    <footer>
+        <p>&copy; 2023 Barter. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const listingContainer = document.querySelector(".listing-container");
+            const showMoreButton = document.getElementById("show-more-btn");
+            
+            const cards = listingContainer.querySelectorAll(".listing-card");
+            const visibleCardCount = 8;
+            
+            // Show more cards function
+            const showMoreCards = () => {
+                cards.forEach((card, index) => {
+                    if (index >= visibleCardCount) {
+                        card.style.display = "none";
+                    }
+                });
+
+                showMoreButton.style.display = "block";
+            };
+
+            // Show more button click event
+            showMoreButton.addEventListener("click", () => {
+                cards.forEach((card, index) => {
+                    if (index >= visibleCardCount) {
+                        card.style.display = "flex";
+                    }
+                });
+
+                showMoreButton.style.display = "none";
+            });
+
+            showMoreCards(); // Initialize with initial visible cards
+        });
+    </script>
+</body>
+</html>
